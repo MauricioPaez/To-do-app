@@ -11,3 +11,4 @@ install.sh
 - MySql 8.0.26
 - Java 11
 - Spring Boot 2.6.6
+- React 18.0.0

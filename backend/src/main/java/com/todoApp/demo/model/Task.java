@@ -8,14 +8,16 @@ import java.util.Date;
 public class Task {
     private int id;
     private String name;
+    private int active;
     private Date created_date;
 
     public Task() {
     }
 
-    public Task(int id, String name, Date createdDate) {
+    public Task(int id, String name, int active, Date createdDate) {
         this.id = id;
         this.name = name;
+        this.active = active;
         this.created_date = createdDate;
     }
 
@@ -43,5 +45,13 @@ public class Task {
 
     public void setCreated_date(Date created_date) {
         this.created_date = created_date;
+    }
+
+    public int getActive() {
+        return active;
+    }
+
+    public void setActive(int active) {
+        this.active = active;
     }
 }
