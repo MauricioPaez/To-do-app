@@ -12,3 +12,4 @@ install.sh
 - Java 11
 - Spring Boot 2.6.6
 - React 18.0.0
+- MUI 5.5.2
