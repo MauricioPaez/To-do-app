@@ -22,6 +22,7 @@ cd /backend
 mvn spring-boot:run
 
 # 7. Install web app dependencies
+cd ../react-app
 npm install
 
 # 8. Run project
