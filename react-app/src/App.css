@@ -14,6 +14,13 @@
   color: white;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #newTaskContainer {
   display: flex;
   flex-direction: column;
@@ -29,14 +36,16 @@
 }
 
 .task {
+  width: 100%;
+  min-height: 5rem;
   border: #282c34;
   border-radius: 0.25rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   display: flex;
+  justify-content: space-between;
   gap: 0.5rem;
   align-items: center;
-  margin: 0px 2rem;
 }
 
 .task:hover {
@@ -44,11 +53,25 @@
 }
 
 .deleteIcon {
-  color: #F44336;
+  color: #f44336;
 }
 
 .tasksContainer {
+  min-width: 30rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .tasksContainer {
+    min-width: 20rem;
+  }
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.25rem;
   align-items: center;
 }
